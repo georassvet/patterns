@@ -1,4 +1,4 @@
-package creational.factory.ex1;
+package creational.factoryMethod.ex1;
 
 public class VolksvagenRusStore extends VolkswagenStore {
     public Car produceCar(String model) {

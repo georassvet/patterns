@@ -1,4 +1,4 @@
-package creational.factory.ex1;
+package creational.factoryMethod.ex1;
 
 public class VolksvagenJettaRus implements Car {
     public void testDrive() {
