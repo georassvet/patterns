@@ -1,18 +1,23 @@
 package creational.builder.ex1;
 
 public class Director {
-   private EmployeeBuilder builder;
+    private NotebookBuilder builder;
 
-    public void setBuilder(EmployeeBuilder builder) {
+    public Director(NotebookBuilder builder) {
         this.builder = builder;
     }
 
-    public Employee buildEmployee(String empName, double salary){
-        builder.createEmployee();
-        builder.addName(empName);
-        builder.setSalary(salary);
-        builder.chooseGender();
-        return builder.getEmployee();
+    public void setBuilder(NotebookBuilder builder) {
+        this.builder = builder;
     }
 
+    public Notebook construct(){
+       builder.createNotebook();
+       builder.setName();
+       builder.setRam();
+       builder.setOS();
+       builder.setHard();
+
+       return builder.getNotebook();
+    }
 }
